@@ -9,7 +9,7 @@ module.exports = async () => {
 
   // Store API Responses
   const result = {};
-  
+
   result.airtable = {};
   result.airtable.selectQueryResult = await lib.airtable.query['@0.4.3'].select({
     table: `Users`,
@@ -19,9 +19,9 @@ module.exports = async () => {
       }
     ]
   });
-  
+
   let formattedSignupText = result.airtable.selectQueryResult.rows.slice(0, 10).map((signup) => {
-    let signupText = `**${signup.fields['Username']}** ${signup.fields['Email']}<br>`;
+    let signupText = `**${signup.fields['Username']}** [${signup.fields['Email']}](mailto:${signup.fields['Email']})<br>`;
     if (signup.fields['Company']) {
       signupText += `*${signup.fields['Company']}*`;
     }
@@ -30,18 +30,18 @@ module.exports = async () => {
     }
     return signupText;
   }).join('<br>');
-  
+
   let messageBody = `There were **${result.airtable.selectQueryResult.rows.length}** signups in the last 24 hours!`;
   if (result.airtable.selectQueryResult.rows.length) {
     messageBody += ` Here are the most recent ones:<br><br>${formattedSignupText}`;
   }
-  
+
   result.microsoftteams = {};
   result.microsoftteams.messageResult = await lib.microsoftteams.messages['@0.0.0'].create({
     channel: `General`,
     body: messageBody
   });
-  
+
   return result;
 
 };
