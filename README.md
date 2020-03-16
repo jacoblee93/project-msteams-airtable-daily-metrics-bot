@@ -16,7 +16,7 @@ To set up an Airtable base with the proper fields, follow this link to copy the 
 
 ![](./readme/images/user-signup-base.png)
 
-**Note:** You'll notice that the **Created At** fields for each entry are actually set for 2030 –– this is just for testing purposes. Our workflow will check for any rows with a **Created At** field greater than 24 hours before execution, and setting this date in the future ensures that we'll have some sample data to show.
+**Note:** You'll notice that the **Created At** fields for each entry are actually set for 2030 –– this is just for testing purposes. Our workflow will check for any rows with a **Created At** field greater than 24 hours before execution, and setting this date in the future ensures that we'll have some sample data to show. When you're ready to use real user signups, you should delete these rows.
 
 ## Installing Your Bot Into Teams
 
