@@ -8,7 +8,7 @@ This is a Microsoft Teams bot that, once a day, will query Airtable for new sign
 
 ![](./readme/images/metrics-message.png)
 
-Setup is simple –– you can deploy it without writing any code or configuring any files due to Standard Library's [Identity Token](https://docs.stdlib.com/identity-management-sso-for-apis/what-is-an-identity-token/) support! The only things you need to do are to add the Standard Library bot to your Microsoft Teams organization, set up a target Airtable base, link those to resources, and deploy.
+Setup is simple –– you can deploy it without writing any code or configuring any files due to Standard Library's [Identity Token](https://docs.stdlib.com/identity-management-sso-for-apis/what-is-an-identity-token/) support! The only things you need to do are to add the Standard Library bot to your Microsoft Teams organization, set up a target Airtable base, link those resources to Standard Library, and deploy.
 
 ## Setting Up Your Airtable Base
 
