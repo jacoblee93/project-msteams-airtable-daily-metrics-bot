@@ -1,0 +1,8 @@
+{
+  "name": "daily-metrics-bot",
+  "author": "Jacob Lee <jacob@polybit.com>",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest"
+  }
+}
