@@ -20,6 +20,8 @@ To set up an Airtable base with the proper fields, follow this link to copy the 
 
 ## Installing Your Bot Into Teams
 
+`// Flow pending`
+
 ## Deploying to Standard Library
 
 Once you've set up your Airtable base and installed the Standard Library app into your Microsoft Teams organization, click the button below to open this repo in [Autocode](https://autocode.stdlib.com/):
